@@ -4,10 +4,118 @@ A curated list of recommended applications for Windows.
 
 ---
 
+## Overview
+
+A structured summary of recommended utilities for Windows 10 and 11, cataloged by functional environments:
+
+* **Category 1: System, Customization & Package Management**
+    * [ExplorerPatcher](#1-explorerpatcher) — Classic Windows UI and taskbar restoration.
+    * [Glow](#2-glow) — Advanced system analysis and hardware diagnostics.
+    * [Microsoft PC Manager](#3-microsoft-pc-manager) — Official lightweight system optimization and maintenance tool.
+    * [NetSpeedTray](#4-netspeedtray) — Lightweight real-time network and hardware monitoring in the taskbar.
+    * [UniGetUI](#5-unigetui) — Intuitive package manager graphical user interface.
+* **Category 2: Terminal Emulators & Remote Management**
+    * [Cmder](#6-cmder) — Portable console emulator wrapper with enhanced shell features.
+    * [MobaXterm](#7-mobaxterm) — All-in-one workstation for remote computing and network infrastructure management.
+    * [RustDesk](#8-rustdesk) — Secure, open-source, and self-hosted remote desktop alternative.
+* **Category 3: Shells & Environment Customization**
+    * [Git for Windows / Git Bash](#9-git-for-windows--git-bash) — Light POSIX-compliant environment and version control utilities.
+    * [Oh My Posh](#10-oh-my-posh) — Agnostic and highly customizable prompt theme engine for any shell.
+
+---
+
 ## Category 1: System, Customization & Package Management
 Utilities designed to monitor hardware, optimize performance, tweak the Windows interface, or streamline software installations.
 
-### 1. [UniGetUI](https://github.com/marticliment/UniGetUI)
+### 1. [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher)
+
+#### 🇺🇸 English (en-us)
+**ExplorerPatcher** is an open-source utility designed to enhance working environments on Windows 11 by bringing back classic, highly functional UI behaviors from Windows 10. It interacts deeply with the Windows Explorer shell to restore familiar workflows that were removed in newer OS iterations.
+
+* **Key Features:**
+    * **Classic Taskbar Restoration:** Choose between the native Windows 11 taskbar or the classic Windows 10 style, allowing for custom positioning (top, left, or right sides of the screen).
+    * **Start Menu Customization:** Enables users to bring back the Windows 10 tile layout or open the standard Windows 11 Start Menu directly to the "All Apps" list.
+    * **Context Menu Modding:** Replaces the padded Windows 11 context menu with the classic, snappier Windows 10/7 right-click menus without altering registry keys manually.
+    * **System Tray Improvements:** Restores legacy system icons and functionality, such as the classic network flyout and the separate Windows 10 volume/battery dialogs.
+
+#### 🇹🇼 繁體中文 (zh-tw)
+**ExplorerPatcher** 是一款旨在優化 Windows 11 工作環境的開源工具，能將許多經典且實用的 Windows 10 使用者介面（UI）行為帶回新系統。它透過與 Windows 檔案總管外殼（Shell）深度互動，還原了許多被新系統拔除的滑鼠與鍵盤工作流程。
+
+* **核心功能特色：**
+    * **經典工作列還原：** 可自由選擇要使用 Windows 11 原生樣式或是 Windows 10 經典工作列，並支援將工作列移至螢幕上方、left側或右側。
+    * **開始功能表自訂：** 允許使用者找回 Windows 10 的動態磚版面，或者將 Windows 11 的開始功能表預設設定為直接開啟「所有應用程式」清單。
+    * **右鍵選單修改：** 將 Windows 11 繁複的右鍵快顯功能表，替換回經典、反應更迅速的 Windows 10/7 傳統樣式，無需手動修改登錄檔。
+    * **系統匣外觀改善：** 還原舊版的系統圖示與彈出視窗功能，例如經典的網路連接面板，以及獨立的 Windows 10 音量與電池調整介面。
+
+---
+
+### 2. [Glow](https://github.com/turkaysoft/glow)
+
+#### 🇺🇸 English (en-us)
+**Glow** is a modern, open-source system analysis tool designed to provide deep insights into Windows hardware and software configurations. Acting as a contemporary alternative to classic diagnostics tools, it collects comprehensive telemetry across your motherboard, processor, memory, operating system, and connected peripherals within a clean, intuitive interface.
+
+* **Key Features:**
+    * **Deep Hardware Diagnostics:** Reveals granular details about CPU architectures, RAM timings, storage health (S.M.A.R.T. attributes), and motherboard specifications.
+    * **Software & OS Telemetry:** Analyzes active Windows features, installed drivers, running services, network properties, and environment variables.
+    * **Exportable System Reports:** Generates structured HTML, TXT, or JSON summary reports for effortless system auditing or troubleshooting documentation.
+    * **Native & Portable Architecture:** Operates with native execution and zero installation overhead, making it an ideal utility for IT professionals deployment via USB.
+
+#### 🇹🇼 繁體中文 (zh-tw)
+**Glow** 是一款現代化的開源系統分析工具，旨在提供深入的 Windows 硬體與軟體組態資訊。作為傳統診斷工具的當代替代方案，它能在簡潔直觀的介面中，全面收集主機板、處理器、記憶體、作業系統及連接週邊的詳細遙測數據。
+
+* **核心功能特色：**
+    * **深度硬體診斷：** 顯示 CPU 架構、RAM 時序、儲存裝置健康度（S.M.A.R.T. 屬性）以及主機板規格等細緻的系統核心資訊。
+    * **軟體與系統遙測：** 分析當前 Windows 功能狀態、已安裝的驅動程式、運作中的服務、網路屬性以及環境變數。
+    * **可匯出之系統報告：** 支援產生結構化的 HTML、TXT 或 JSON 摘要報告，讓系統稽核或故障排除的文件記錄變得非常輕鬆。
+    * **原生免安裝架構：** 採原生執行且完全免安裝，極低資源佔用，非常適合 IT 專業人員裝入隨身碟中隨身攜帶部署。
+
+---
+
+### 3. [Microsoft PC Manager](https://pcmanager.microsoft.com/)
+
+#### 🇺🇸 English (en-us)
+**Microsoft PC Manager** is an official, lightweight desktop utility developed by Microsoft to optimize system performance and maintain computer health. It brings together native Windows maintenance features into a single, streamlined interface to simplify basic optimization.
+
+* **Key Features:**
+    * **One-Click Boost:** Instantly clears temporary storage files and reclaims system memory (RAM) to speed up sluggish execution.
+    * **Storage Management:** Deeply cleans log files, manages large files scattered across your drives, and controls storage sense setups.
+    * **Startup App Control:** Disables resource-heavy startup applications to decrease boot times and optimize background operations.
+    * **Health Checkup:** Scans for potential system anomalies, customizes malware detection settings, and detects residual junk files safely.
+
+#### 🇹🇼 繁體中文 (zh-tw)
+**Microsoft PC Manager**（微軟電腦管家）是一款由微軟官方開發的輕量級桌面工具，旨在優化系統效能並維護電腦健康。它將 Windows 原生的多項維護功能整合到單一且流暢的介面中，簡化了電腦的基礎優化流程。
+
+* **核心功能特色：**
+    * **一鍵加速（Boost）：** 瞬間清理系統暫存檔案並釋放記憶體（RAM）空間，快速改善電腦卡頓.
+    * **儲存空間管理：** 深度清理日誌與暫存檔、快速篩選硬碟中的大檔案，並能直接配置儲存空間感知器。
+    * **開機啟動項控制：** 輕鬆停用高資源佔用的開機自啟動軟體，大幅縮短開機時間並優化背景運作。
+    * **系統健康檢查：** 快速掃描潛在的系統異常、管理安全防護設定，並安全地清除垃圾檔案。
+
+---
+
+### 4. [NetSpeedTray](https://github.com/mullsoft/NetSpeedTray)
+
+#### 🇺🇸 English (en-us)
+**NetSpeedTray** is a lightweight, open-source system utility for Windows 10 and 11 that displays live upload and download speeds directly on your taskbar. It blends seamlessly with the native Windows UI while operating with minimal CPU and RAM usage to maximize battery life.
+
+* **Key Features:**
+    * **Real-Time Network Monitoring:** Shows precise, sub-second bandwidth speeds right in your line of sight.
+    * **Hardware Telemetry:** Tracks CPU/GPU utilization, temperatures, power consumption (Watts), RAM, and VRAM alongside network speeds.
+    * **High Customization:** Offers visual color-coding based on speed thresholds, custom fonts, arrow styles, and an optional mini-graph overlay.
+    * **Per-App Traffic Breakdown:** Includes a dedicated dashboard to view bandwidth usage on a per-process basis and set monthly data usage caps.
+
+#### 🇹🇼 繁體中文 (zh-tw)
+**NetSpeedTray** 是一款專為 Windows 10 和 11 設計的輕量級開源系統工具，能在工作列上直接顯示即時的網路「上傳」與「下載」速度。它的設計完美融入 Windows 原生介面，且記憶體與 CPU 佔用極低，完全不影響電池續航力。
+
+* **核心功能特色：**
+    * **即時網速監控：** 在工作列角落以毫秒級的速度更新當前的網路頻寬，讓你一眼掌握網路狀況。
+    * **硬體狀態監控：** 除了網速外，還能同步顯示 CPU/GPU 使用率、溫度、功耗（瓦數）以及 RAM / VRAM 的佔用情況。
+    * **高度自訂化：** 支援依據網速高低自動變換顏色（觸發門檻可自訂），並可自行調整字型、箭頭樣式或開啟微型歷史走勢圖。
+    * **單一應用程式流量分析：** 內建詳細的管理面板，可查看是哪一個軟體程式在佔用網路頻寬，並支援設定每月網路流量上限警告。
+
+---
+
+### 5. [UniGetUI](https://github.com/marticliment/UniGetUI)
 
 #### 🇺🇸 English (en-us)
 **UniGetUI** (formerly WingetUI) is an intuitive, open-source Graphical User Interface (GUI) designed to manage command-line package managers on Windows 10 and 11. Instead of typing complex terminal commands, UniGetUI provides a unified dashboard to seamlessly discover, install, update, and uninstall software.
@@ -31,76 +139,10 @@ Utilities designed to monitor hardware, optimize performance, tweak the Windows 
 
 ---
 
-### 2. [NetSpeedTray](https://github.com/mullsoft/NetSpeedTray)
-
-#### 🇺🇸 English (en-us)
-**NetSpeedTray** is a lightweight, open-source system utility for Windows 10 and 11 that displays live upload and download speeds directly on your taskbar. It blends seamlessly with the native Windows UI while operating with minimal CPU and RAM usage to maximize battery life.
-
-* **Key Features:**
-    * **Real-Time Network Monitoring:** Shows precise, sub-second bandwidth speeds right in your line of sight.
-    * **Hardware Telemetry:** Tracks CPU/GPU utilization, temperatures, power consumption (Watts), RAM, and VRAM alongside network speeds.
-    * **High Customization:** Offers visual color-coding based on speed thresholds, custom fonts, arrow styles, and an optional mini-graph overlay.
-    * **Per-App Traffic Breakdown:** Includes a dedicated dashboard to view bandwidth usage on a per-process basis and set monthly data usage caps.
-
-#### 🇹🇼 繁體中文 (zh-tw)
-**NetSpeedTray** 是一款專為 Windows 10 和 11 設計的輕量級開源系統工具，能在工作列上直接顯示即時的網路「上傳」與「下載」速度。它的設計完美融入 Windows 原生介面，且記憶體與 CPU 佔用極低，完全不影響電池續航力。
-
-* **核心功能特色：**
-    * **即時網速監控：** 在工作列角落以毫秒級的速度更新當前的網路頻寬，讓你一眼掌握網路狀況。
-    * **硬體狀態監控：** 除了網速外，還能同步顯示 CPU/GPU 使用率、溫度、功耗（瓦數）以及 RAM / VRAM 的佔用情況。
-    * **高度自訂化：** 支援依據網速高低自動變換顏色（觸發門檻可自訂），並可自行調整字型、箭頭樣式或開啟微型歷史走勢圖。
-    * **單一應用程式流量分析：** 內建詳細的管理面板，可查看是哪一個軟體程式在佔用網路頻寬，並支援設定每月網路流量上限警告。
-
----
-
-### 3. [Microsoft PC Manager](https://pcmanager.microsoft.com/)
-
-#### 🇺🇸 English (en-us)
-**Microsoft PC Manager** is an official, lightweight desktop utility developed by Microsoft to optimize system performance and maintain computer health. It brings together native Windows maintenance features into a single, streamlined interface to simplify basic optimization.
-
-* **Key Features:**
-    * **One-Click Boost:** Instantly clears temporary storage files and reclaims system memory (RAM) to speed up sluggish execution.
-    * **Storage Management:** Deeply cleans log files, manages large files scattered across your drives, and controls storage sense setups.
-    * **Startup App Control:** Disables resource-heavy startup applications to decrease boot times and optimize background operations.
-    * **Health Checkup:** Scans for potential system anomalies, customizes malware detection settings, and detects residual junk files safely.
-
-#### 🇹🇼 繁體中文 (zh-tw)
-**Microsoft PC Manager**（微軟電腦管家）是一款由微軟官方開發的輕量級桌面工具，旨在優化系統效能並維護電腦健康。它將 Windows 原生的多項維護功能整合到單一且流暢的介面中，簡化了電腦的基礎優化流程。
-
-* **核心功能特色：**
-    * **一鍵加速（Boost）：** 瞬間清理系統暫存檔案並釋放記憶體（RAM）空間，快速改善電腦卡頓。
-    * **儲存空間管理：** 深度清理日誌與暫存檔、快速篩選硬碟中的大檔案，並能直接配置儲存空間感知器。
-    * **開機啟動項控制：** 輕鬆停用高資源佔用的開機自啟動軟體，大幅縮短開機時間並優化背景運作。
-    * **系統健康檢查：** 快速掃描潛在的系統異常、管理安全防護設定，並安全地清除垃圾檔案。
-
----
-
-### 4. [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher)
-
-#### 🇺🇸 English (en-us)
-**ExplorerPatcher** is an open-source utility designed to enhance working environments on Windows 11 by bringing back classic, highly functional UI behaviors from Windows 10. It interacts deeply with the Windows Explorer shell to restore familiar workflows that were removed in newer OS iterations.
-
-* **Key Features:**
-    * **Classic Taskbar Restoration:** Choose between the native Windows 11 taskbar or the classic Windows 10 style, allowing for custom positioning (top, left, or right sides of the screen).
-    * **Start Menu Customization:** Enables users to bring back the Windows 10 tile layout or open the standard Windows 11 Start Menu directly to the "All Apps" list.
-    * **Context Menu Modding:** Replaces the padded Windows 11 context menu with the classic, snappier Windows 10/7 right-click menus without altering registry keys manually.
-    * **System Tray Improvements:** Restores legacy system icons and functionality, such as the classic network flyout and the separate Windows 10 volume/battery dialogs.
-
-#### 🇹🇼 繁體中文 (zh-tw)
-**ExplorerPatcher** 是一款旨在優化 Windows 11 工作環境的開源工具，能將許多經典且實用的 Windows 10 使用者介面（UI）行為帶回新系統。它透過與 Windows 檔案總管外殼（Shell）深度互動，還原了許多被新系統拔除的滑鼠與鍵盤工作流程。
-
-* **核心功能特色：**
-    * **經典工作列還原：** 可自由選擇要使用 Windows 11 原生樣式或是 Windows 10 經典工作列，並支援將工作列移至螢幕上方、左側或右側。
-    * **開始功能表自訂：** 允許使用者找回 Windows 10 的動態磚版面，或者將 Windows 11 的開始功能表預設設定為直接開啟「所有應用程式」清單。
-    * **右鍵選單修改：** 將 Windows 11 繁複的右鍵快顯功能表，替換回經典、反應更迅速的 Windows 10/7 傳統樣式，無需手動修改登錄檔。
-    * **系統匣外觀改善：** 還原舊版的系統圖示與彈出視窗功能，例如經典的網路連接面板，以及獨立的 Windows 10 音量與電池調整介面。
-
----
-
 ## Category 2: Terminal Emulators & Remote Management
 Environments used to host shells, run commands, and manage remote connections or network infrastructure.
 
-### 5. [Cmder](https://cmder.app/)
+### 6. [Cmder](https://cmder.app/)
 
 #### 🇺🇸 English (en-us)
 **Cmder** is a popular, portable terminal emulator wrapper for Windows designed to alleviate the lack of a proper CLI experience. It combines Monokai color schemes, Git integration, and custom shell features into a standalone software package that does not require installation.
@@ -122,7 +164,7 @@ Environments used to host shells, run commands, and manage remote connections or
 
 ---
 
-### 6. [MobaXterm](https://mobaxterm.mobatek.net/)
+### 7. [MobaXterm](https://mobaxterm.mobatek.net/)
 
 #### 🇺🇸 English (en-us)
 **MobaXterm** is an all-in-one toolbox for remote computing, tailored for sysadmins, developers, and power users who need to manage remote network infrastructure. It packs essential Unix tools, network utilities, and remote access clients into a single Windows desktop application.
@@ -137,14 +179,14 @@ Environments used to host shells, run commands, and manage remote connections or
 **MobaXterm** 是一款全能型遠端運算工具箱，專為需要管理遠端網路基礎架構的系統管理員、開發人員與進階使用者量身打造。它將必備的 Unix 工具、網路公用程式與遠端存取用戶端整合進單一 Windows 桌面應用程式中。
 
 * **核心功能特色：**
-    * **多協定連線管理器：** 透過結構化的頁籤介面，統一管理 SSH、Telnet、RDP、VNC、FTP、SFTP 及 XDMCP 等遠端連線。
+    * **多協定連線管理器：** 透過結構化的頁籤介面，統一管理 SSH、Telnet, RDP、VNC、FTP、SFTP 及 XDMCP 等遠端連線。
     * **內建 X11 伺服器：** 內含完整配置的 Xserver，讓使用者能直接在 Windows 桌面上顯示並操作遠端 Linux 的圖形化應用程式。
     * **圖形化 SFTP 瀏覽器：** 當你透過 SSH 連線時，系統會自動在側邊欄開啟圖形化檔案瀏覽器，支援直接拖曳檔案進行傳輸。
     * **整合網路工具：** 內建多種實用的網路工具，如埠口掃描器（Port Scanner）、網路掃描器、封包擷取工具，以及嵌入式的 TFTP/HTTP 伺服器。
 
 ---
 
-### 7. [RustDesk](https://rustdesk.com/)
+### 8. [RustDesk](https://rustdesk.com/)
 
 #### 🇺🇸 English (en-us)
 **RustDesk** is a powerful, full-featured remote desktop application built using Rust. Acting as an open-source alternative to proprietary solutions like TeamViewer or AnyDesk, it gives users complete data security over their remote connections.
@@ -159,7 +201,7 @@ Environments used to host shells, run commands, and manage remote connections or
 **RustDesk** 是一款使用 Rust 語言編寫、功能強大的遠端桌面連線軟體。作為 TeamViewer 或 AnyDesk 等商業閉源軟體的開源替代方案，它能讓使用者對自己的遠端連線資料安全擁有完全的主導權。
 
 * **核心功能特色：**
-    * **支援自建伺服器（Self-Hosting）：** 允許使用者輕鬆架設專屬的中繼（Relay）與媒合伺服器，確保連線流量絕不經過第三方伺服器。
+    * **支援自建伺服器（Self-Hosting）：** 允許使用者輕鬆架設專屬的中繼（Relay）與媒合伺服器，確保連線流量裝載絕不經過第三方伺服器。
     * **端到端加密：** 所有連線階段均採用 TLS 1.3 以及銀行級的 NaCl 端到端加密技術，徹底防止連線被竊聽。
     * **全平台相容：** 支援 Windows、macOS、Linux、iOS、Android 以及網頁瀏覽器，可跨平台雙向輕鬆遙控。
     * **內建檔案傳輸與聊天：** 視窗內整合了輕量級檔案管理器與即時文字通訊功能，方便在遠端操控時同步傳遞檔案與溝通。
@@ -169,7 +211,7 @@ Environments used to host shells, run commands, and manage remote connections or
 ## Category 3: Shells & Environment Customization
 Tools that interpret commands or visually enhance terminal environments.
 
-### 8. [Git for Windows / Git Bash](https://gitforwindows.org/)
+### 9. [Git for Windows / Git Bash](https://gitforwindows.org/)
 
 #### 🇺🇸 English (en-us)
 **Git for Windows** focusing on **Git Bash** provides a lightweight environment that brings a full Unix-like command-line experience to Windows systems. It acts as a bridge for developers who need to run standard open-source build scripts and Git version control workflows without jumping to a full Linux virtual machine.
@@ -191,7 +233,7 @@ Tools that interpret commands or visually enhance terminal environments.
 
 ---
 
-### 9. [Oh My Posh](https://ohmyposh.dev/)
+### 10. [Oh My Posh](https://ohmyposh.dev/)
 
 #### 🇺🇸 English (en-us)
 **Oh My Posh** is a highly customizable, cross-platform prompt theme engine designed for any shell. It allows users to turn plain text terminal prompts into highly informative, visually striking dashboards using Nerd Fonts to display contextual icons and glyphs.
